@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/alert.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "routes": [
+    { "src": "/api/alert", "dest": "api/alert.py" }
+  ]
+}
