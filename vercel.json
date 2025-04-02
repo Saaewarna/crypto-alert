@@ -1,10 +1,13 @@
 {
   "functions": {
     "api/alert.py": {
-      "runtime": "python3.9"
+      "runtime": "vercel-python@0.7.1"
     }
   },
   "routes": [
-    { "src": "/api/alert", "dest": "api/alert.py" }
+    {
+      "src": "/api/alert",
+      "dest": "api/alert.py"
+    }
   ]
 }
