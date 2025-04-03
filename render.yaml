@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: crypto-alert
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python api/alert.py"
+    envVars:
+      - key: TOKEN
+        fromDatabase:
+          name: TOKEN
+      - key: CHAT_ID
+        fromDatabase:
+          name: CHAT_ID
